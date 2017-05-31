@@ -1,0 +1,15 @@
+<script type="text/javascript">
+	
+function palindrome(str) {
+  // Good luck!
+  var ab= /[^A-Za-z0-9]/g;
+  var testStr = str.toLowerCase().replace(ab,'');
+  var reverseStr = testStr.split('').reverse().join(''); 
+  return reverseStr;
+}
+
+
+
+palindrome("eye");
+
+</script>

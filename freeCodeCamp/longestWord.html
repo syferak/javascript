@@ -1,0 +1,23 @@
+<script type="text/javascript">
+
+//find the longest word in the string
+
+	function findLongestWord(str) {
+  a=str.split(" ");
+  t=a[0].length;
+  for(i=0;i<a.length;i++)
+    {
+      
+      if(a[i].length>t){
+        t=a[i].length;
+      }
+      
+    }
+ 
+
+  return t;
+}
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
+
+</script>

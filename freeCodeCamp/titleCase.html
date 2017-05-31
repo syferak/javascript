@@ -1,0 +1,28 @@
+<script>
+
+//Make first letter of every word capital
+
+function titleCase(str) {
+  testStr=str.toLowerCase();
+  a=testStr.split(" ");
+  var c="";
+  re=/W/g;
+  for(i=0;i<a.length;i++)
+    {
+      
+      c=c + capital(a[i],a[i].length-1);
+      d=c.trim();
+      
+    }
+  return d;
+}
+
+function capital(strCap,length){
+  j=strCap.charAt(0);
+  k=j.toUpperCase()+strCap.substr(1,length)+" ";
+ return k; 
+  
+}
+
+titleCase("sHoRt AnD sToUt");
+</script>
